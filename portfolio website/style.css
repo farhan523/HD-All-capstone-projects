@@ -1,0 +1,284 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif;
+    scroll-behavior: smooth;
+}
+
+nav{
+    background-color: #000;
+    min-height: 80px;
+    max-height: 130px;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    align-items: center;
+    position: fixed;
+    width: 100%;
+    z-index: 1;
+}
+
+nav h2{
+    font-family: "Merriweather Sans", sans-serif;
+    color: #55198b;
+}
+
+nav ul{
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+nav ul li{
+    color: #fff;
+    font-size: 18px;
+    padding-bottom: 0;
+    cursor: pointer;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: inherit;
+    margin: 0 0.3rem 0 0.3rem;
+}
+
+nav ul li a:hover{
+    padding-bottom: 5px;
+    border-bottom: 2px solid white;
+}
+
+header{
+    max-height: 100vh;
+    font-family: "Varela Round", sans-serif;
+    background-color: saddlebrown;
+    display: flex;
+}
+
+header .left{
+    
+    width: 50%;
+    height: 100vh;
+    background-color: #272327;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+}
+
+header .left .content{
+    padding: 30px;
+}
+
+.welcome-content{
+    color: grey;
+    margin: .47rem 0;
+}
+
+.main-content{
+    color: #fff;
+    margin: .67em 0;
+    font-size: 3rem;
+}
+
+.loc{
+    color: #fff;
+    margin: .67em 0;
+}
+
+header button{
+    background-color: #55198b;
+    border: 1px solid #55198b;
+    color: #fff;
+    font-weight: 700;
+    min-width: 200px;
+    padding: 13px 22px;
+    text-transform: uppercase;
+    border-radius: 6px;
+    text-align: center;
+    outline: none;
+    margin-top: 1.6rem;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: all .3s ease-in-out 0s;
+}
+
+header .right{
+    height: 100vh;
+    background-color: #272327;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    width: 50%;
+    align-items: center;
+}
+
+header .right .image{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    animation: MoveUpDown 3s linear infinite;
+}
+
+@keyframes MoveUpDown {
+    0%, 100% {
+      bottom: 0;
+    }
+    50% {
+      bottom: 30px;
+    }
+  }
+
+  .section-heading{
+    text-align: center;
+    padding: 1rem;
+}
+
+.personalInfo {
+    min-height: 200px;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.profileImage{
+    width: 20rem;
+    height: 20rem;
+    border-radius: 50%;
+    background-color: #55198b;
+    background-image: url("https://scontent.flhe6-1.fna.fbcdn.net/v/t39.30808-6/438146293_3298024550498966_2420312805363228380_n.jpg?_nc_cat=109&ccb=1-7&_nc_sid=5f2048&_nc_ohc=bkbglIaMvxsQ7kNvgF_DRTy&_nc_ht=scontent.flhe6-1.fna&oh=00_AfCCtIlQpj-sS-LWaqD6pFGOLt6d6wkB7Va67BsSFgwohw&oe=663A65D7");
+    background-position: cover;
+    background-size: cover;
+}
+
+.personalInfo p{
+    width: 50%;
+    text-align: justify;
+    
+}
+
+.services-div{
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.services-card{
+    width: 20rem;
+    height: 300px;
+    padding: 2rem;
+    background-clip: content-box;
+    background-color: black;
+    color: white;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+    margin-bottom: 1rem;
+}
+
+.services-card h2{
+    padding: 1rem;
+}
+
+.testimonials-div{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+}
+
+.testimonials-card{
+    width: 20rem;
+    height: 200px;
+    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+    margin-bottom: 2rem;
+}
+
+.feedback-text{
+    padding: 1rem;
+    text-align: justify;
+}
+
+.t-card-header{
+    display: flex;
+    align-items: center;
+    padding: 1rem;
+    
+}
+
+.user-image{
+    background-image: url("https://images.unsplash.com/photo-1529626455594-4ff0802cfb7e?q=80&w=1887&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D");
+    width: 4rem;
+    height: 4rem;
+    background-position: center;
+    background-size: cover;
+    border-radius: 50%;
+    margin-right: 1rem;
+}
+
+#portfolio{
+    display: flex;
+    justify-content: space-evenly;
+    flex-direction: column;
+    align-items: center;
+}
+
+#portfolio a{
+    text-decoration: none;
+    color: black;
+}
+
+.portfolio-card{
+    width: 20rem;
+    height: 300px;
+    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+    cursor: pointer;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.portfolio-image{
+    background-image: url("./image/portfolio\ pic.jpg");
+    width: 100%;
+    height: 200px;
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+
+footer{
+    height: 3rem;
+    background-color: #000;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+    margin-top: 3rem;
+}
+
+@media screen and  (max-width:990px){
+    header .right{
+        display: none;
+    }
+
+    header .left{
+        width: 100%;
+    }
+
+    .personalInfo p{
+        width: 80%;
+        text-align: justify;
+        margin-top: 1rem;
+    }
+   
+}

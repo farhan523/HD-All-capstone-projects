@@ -1,0 +1,74 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+nav {
+    height: 5rem;
+    background-color: rgb(222, 28, 28);
+    display: flex;
+    align-items: center;
+    padding-left: 1rem;
+    color: white;
+}
+
+#complete-order-btn,
+#order-btn {
+    padding: 1rem 2rem;
+    background-color: black;
+    color: white;
+    font-weight: bold;
+    border: none;
+    margin: 1rem 1rem;
+    cursor: pointer;
+}
+
+#order-btn:hover {
+    background-color: rgb(202, 22, 22);
+    color: black;
+}
+
+#complete-order-btn:hover {
+    background-color: rgb(202, 22, 22);
+    color: black;
+}
+
+#orders {
+    display: flex;
+    flex-wrap: wrap;
+    height: 70vh;
+    justify-content: space-around;
+}
+
+.items {
+    padding: 2rem;
+    width: 45%;
+    min-height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+}
+
+.orderDetails {
+    min-width: 30%;
+    max-width: 80%;
+    margin-bottom: 1rem;
+    padding: 1rem;
+    min-height: 6rem;
+    margin-top: 1rem;
+    box-shadow: rgba(0, 0, 0, 0.02) 0px 1px 3px 0px, rgba(27, 31, 35, 0.15) 0px 0px 0px 1px;
+}
+
+@media screen and (max-width: 600px) {
+    .items {
+        width: 90%;
+        margin-bottom: 1rem;
+    }
+
+    #orders {
+        align-items: center;
+        justify-content: center;
+    }
+}
