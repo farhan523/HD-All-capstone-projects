@@ -1,0 +1,133 @@
+.header{
+    min-height: 25rem;
+    background-color: #f0f8ff;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.leftHeader{
+    width: 40%;
+    background-color: #f0f8ff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.center{
+    min-height: 35rem;
+    background-color: #f0f8ff;
+    color: black;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+
+.leftCenter {
+    width: 30%;
+    display: flex;
+    align-items: center;
+}
+
+.rightCenter {
+    width: 55%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding-right: 5%;
+}
+
+.uses {
+    display: flex;
+    margin-bottom: 50px;
+}
+
+.trackTrace {
+    background-color: #040c62;
+    color: white;
+    padding: 5%;
+    text-align: justify;
+}
+
+.trackTrace h1 {
+    font-size: 2rem;
+}
+
+.trackTrace p {
+    text-align: justify;
+}
+
+.industryUseCases {
+    width: 100%;
+    padding: 2rem;
+}
+
+.industryUseCases h1 {
+    font-size: 2rem;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+.industryUseCases img {
+    max-width: 100%;
+    width: 100%;
+}
+
+.flexContainer {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.flexContainer h1{
+    margin-bottom: 2rem;
+}
+
+.footer {
+    /* width: 100%; */
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    height: 3rem;
+    background-color: #051d40;
+    color: white;
+ 
+    /* margin-bottom: 20px; */
+}
+
+.footer div{
+    display: flex;
+    
+}
+
+.footer div p{
+    margin-left: 1rem;
+}
+
+
+
+@media screen and (max-width:700px) {
+    .rightHeader{
+        display: none;
+    }
+    .leftHeader{
+        width: 90%;
+    }
+    .leftCenter{
+        display: none;
+    }
+    .rightCenter{
+        width: 100% !important;
+        padding: 2rem;
+    }
+    
+    .uses{
+        flex-wrap: wrap;
+    }
+}
