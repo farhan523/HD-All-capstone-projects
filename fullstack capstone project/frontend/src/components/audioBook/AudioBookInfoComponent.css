@@ -1,0 +1,67 @@
+
+.audiobook-info {
+    display: flex;
+    align-items: flex-start;
+    margin-bottom: 20px;
+    padding: 15px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    background-color: #f9f9f9;
+}
+
+.audiobook-info img {
+    width: 100px;
+    height: 100px;
+    margin-right: 20px;
+    border-radius: 5px;
+}
+
+.audiobook-details {
+    flex: 1;
+}
+
+.audiobook-details h2 {
+    font-size: 20px;
+    margin-bottom: 10px;
+    color: #333;
+}
+
+.audiobook-details p {
+    margin: 5px 0;
+    color: #666;
+}
+
+.audiobook-details p strong {
+    color: #333;
+}
+
+.audiobook-details a {
+    display: inline-block;
+    padding: 8px 12px;
+    background-color: #007bff;
+    color: white;
+    text-decoration: none;
+    border-radius: 4px;
+    margin-top: 10px;
+}
+
+.audiobook-details a:hover {
+    background-color: #0056b3;
+}
+
+.audiobook-details button {
+    display: inline-block;
+    padding: 8px 12px;
+    background-color: #28a745;
+    color: white;
+    text-decoration: none;
+    border: none;
+    border-radius: 4px;
+    margin-top: 10px;
+    cursor: pointer;
+    margin-left: 1rem;
+}
+
+.audiobook-details button:hover {
+    background-color: #218838;
+}
