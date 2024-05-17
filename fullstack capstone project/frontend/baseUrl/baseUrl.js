@@ -1,3 +1,3 @@
-const baseUrl = "http://localhost:5000";
+const baseUrl = "https://hd-fullstack-app-backend.onrender.com";
 
 export default baseUrl;
